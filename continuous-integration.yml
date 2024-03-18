@@ -10,6 +10,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    
     - name:  Login to Docker Hub
       uses: docker/login-action@v3.1.0
       with:
@@ -20,7 +21,7 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '17'
-        distribution: 'temurin'
+        distribution: 'adopt'
         cache: maven
           
     - name: Build Application Jar
