@@ -32,7 +32,7 @@ jobs:
 
     - name: Docker Compose Build
       working-directory: ./Nova-pasta
-      run: mvn clean package
+      run: docker compose build
       
     - name: Docker Compose Build
       run: |
