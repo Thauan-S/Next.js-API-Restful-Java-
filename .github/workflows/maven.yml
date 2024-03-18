@@ -27,8 +27,8 @@ jobs:
         cache: maven
         
     - name: Build Application Jar
-      working-directory: ./Nova-pasta/Tropical
-      run: mvn clean package pwd
+      working-directory: ./Tropical
+      run: mvn clean package 
 
     - name: Docker Compose Build
       working-directory: ./Nova-pasta
